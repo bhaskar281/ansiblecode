@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install tee
+    apt:
+      name: tree
+      state: present
+
+  - name: i want to install git
+    apt:
+      name: git
+      state: present
+
